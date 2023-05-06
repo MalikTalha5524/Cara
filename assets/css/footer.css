@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  /* background-color: aqua; */
+  /* width: 100%; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
+}
+/* -----start header--------- */
+header {
+  padding: 0 80px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(227, 230, 243);
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 10px 10px 30px rgb(164, 169, 194);
+  z-index: 1;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.navbar ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.navbar ul li a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: rgb(36, 186, 181);
+}
+.navbar ul li a.active::after,
+.navbar ul li a:hover::after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  position: absolute;
+  background-color: rgb(36, 186, 181);
+  bottom: 15px;
+  left: 0px;
+}
+/* - start hero--------- --------------------------- */
+.hero {
+  background-image: url(../images/banner/b19.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+.hero-text {
+  width: 100%;
+  height: 70vh;
+  padding: 0px 80px 0px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.ht {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ht h2 {
+  font-size: 45px;
+  font-family: "Arimo", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Rubik Iso", cursive;
+}
+.ht p {
+  padding: 5px 0 25px 0;
+  font-size: 16px;
+}
+/* start cotton box------------- */
+.cotton-box {
+  padding: 0px 80px 0px 80px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgb(250, 247, 247);
+}
+.cotton-main {
+  width: 50%;
+  height: 50%;
+}
+.cotton-img {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 50px;
+}
+.cotton-img img {
+  width: 100%;
+  height: 100%;
+}
+.cotton-text {
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cotton-text h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.cotton-text p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.cotton-text a {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 20px;
+  text-decoration: none;
+  color: rgb(57, 45, 45);
+  position: relative;
+}
+.cotton-text a::after {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background-color: #117a28;
+  position: absolute;
+  top: 29px;
+  right: -50px;
+}
+.cotton-text a:hover {
+  color: rgb(61, 44, 137);
+}
+/*-- start paginashion----------- -- */
+.paginashion {
+  text-align: center;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginashion-iteam a {
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #0f5f0b;
+}
+/* - banner-latter ------------------------------- */
+.banner-latter {
+  padding: 50px 80px 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(../images/banner/b14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20px 30px;
+  width: 100%;
+  height: 26vh;
+  background-color: rgb(18, 36, 47);
+  margin: 10px 0;
+}
+.banner-latter .text h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+.banner-latter .text p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #9a9292;
+  padding: 10px 0;
+}
+.banner-latter .text p span {
+  color: #b0d346;
+}
+.banner-latter .form {
+  display: flex;
+  width: 30%;
+}
+.banner-latter .form input {
+  height: 45px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  border: 1px solid transparent;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.banner-latter .form button {
+  font-size: 16px;
+  font-weight: 400;
+  width: 130px;
+  color: white;
+  background-color: #07580b46;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s ease;
+}
+/* - footer start--------------------------- */
+footer .main {
+  padding: 50px 80px 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main1 h4 {
+  padding: 20px 0px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.main .main1 .social-icon {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.main a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(90, 85, 85);
+}
+.main a:hover {
+  text-decoration: underline;
+  color: rgb(76, 142, 248);
+}
+.main .social-img {
+  border: 1px solid rgb(206, 198, 198);
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.main .social-img:hover {
+  cursor: pointer;
+}
+.main .v-img {
+  padding-top: 25px;
+}
+.main1 .app {
+  margin-top: 73px;
+}
+footer .p-text {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #9a9292;
+}
+#nav_btn,
+.nav_btn {
+  display: none;
+}
+/* -------------------------------------------start respovise------------------------------ */
+@media only screen and (min-width: 1200px) {
+  /* Extra large screens, such as desktops */
+  /* CSS styles for extra large screens */
+  .navbar ul li a.active::after,
+  .navbar ul li a:hover::after {
+    width: 65%;
+    left: 1px;
+  }
+}
+/* Large screens, such as laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* CSS styles for large screens */
+  .ht h2 {
+    font-size: 40px;
+  }
+  footer .main {
+    flex-wrap: wrap;
+  }
+  .cotton-text {
+    font-size: 54px;
+  }
+  .cotton-text h2 {
+    font-size: 27px;
+  }
+  .cotton-text p {
+    font-size: 16px;
+  }
+  .cotton-text a {
+    font-size: 12px;
+  }
+}
+
+/* Medium screens, such as tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles for medium screens */
+  header {
+    padding: 0px 18px 0 0px;
+  }
+  .navbar ul li {
+    padding: 0px 20px;
+  }
+  .navbar {
+    width: 70%;
+  }
+  .navbar ul li a.active::after,
+  .navbar ul li a:hover::after {
+    width: 37%;
+    left: 20px;
+  }
+  .hero {
+    height: 48vh;
+  }
+  .hero-text {
+    height: 51vh;
+  }
+  .ht h2 {
+    font-size: 35px;
+  }
+  .cotton-text {
+    font-size: 54px;
+  }
+  .cotton-text h2 {
+    font-size: 27px;
+  }
+  .cotton-text p {
+    font-size: 16px;
+  }
+  .cotton-text a {
+    font-size: 12px;
+  }
+  .cotton-text h2 {
+    font-size: 20px;
+  }
+  .cotton-text p {
+    font-size: 14px;
+    padding-bottom: 0px;
+  }
+  .paginashion-iteam a {
+    font-size: 18px;
+  }
+  footer .main {
+    flex-wrap: wrap;
+  }
+}
+/* Small screens, such as mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* CSS styles for small screens */
+  header {
+    padding: 0px 18px 0 0px;
+  }
+  .navbar ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 13;
+    flex-direction: column;
+    background: rgb(166, 174, 209);
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    padding: 26px;
+    transition: left 0.5s ease-in-out;
+  }
+  #nav_btn:checked + ul {
+    left: 0%;
+  }
+  #nav_btn {
+    display: none;
+  }
+  .nav_btn {
+    display: inline-block;
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    z-index: 11;
+    cursor: pointer;
+    font-size: 27px;
+  }
+  .nav_btn.close {
+    z-index: 14;
+    position: absolute;
+    color: aliceblue;
+  }
+  .navbar ul li {
+    margin-top: 50px;
+    font-size: large;
+    font-weight: 800;
+  }
+  .navbar ul {
+    width: 100%;
+  }
+  .navbar ul li a {
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar ul li a.active::after,
+  .navbar ul li a:hover::after {
+    content: "";
+    width: 8%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 140px;
+  }
+  .hero {
+    height: 39vh;
+  }
+  .cotton-box {
+    padding: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cotton-text {
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cotton-text {
+    padding: 0px 25px;
+  }
+  .cotton-text h2 {
+    font-size: 18px;
+    padding-bottom: 0px;
+  }
+  .cotton-text p {
+    font-size: 14px;
+  }
+  .banner-latter .form {
+    width: 65%;
+    height: 7vh;
+  }
+  .banner-latter .form input {
+    height: 7vh;
+  }
+  footer .main {
+    flex-wrap: wrap;
+  }
+  .hero {
+    height: 30vh;
+  }
+  .hero-text {
+    height: 30vh;
+  }
+  .ht h2 {
+    font-size: 22px;
+  }
+  .ht p {
+    padding: 2px 0 25px 0;
+    font-size: 9px;
+  }
+  .paginashion-iteam a {
+    font-size: 12px;
+  }
+  .banner-latter {
+    margin-top: 10px;
+    height: 35vh;
+    padding: 12px 35px 0px 35px;
+  }
+  footer .main {
+    padding: 35px 40px 0px 35px;
+  }
+  .main .main1 h4 {
+    padding: 15px 0px;
+  }
+  .main1 .app {
+    margin-top: 0px;
+  }
+  .main .social-img {
+    margin: 7px 0;
+    width: 48%;
+  }
+  .main .v-img {
+    padding: 12px 50px 12px 50px;
+    width: 100%;
+  }
+}

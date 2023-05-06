@@ -1,0 +1,1018 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Spartan", sans-serif; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  /* background-color: aqua; */
+  /* width: 100%; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
+}
+/* -----start header--------- */
+header {
+  padding: 0 80px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(227, 230, 243);
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 10px 10px 30px rgb(164, 169, 194);
+  z-index: 1;
+}
+header{
+  scrollbar-shadow:none;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.navbar ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.navbar ul li a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: rgb(36, 186, 181);
+}
+.navbar ul li a.active::after,
+.navbar ul li a:hover::after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  position: absolute;
+  background-color: rgb(36, 186, 181);
+  bottom: 15px;
+  left: 0px;
+}
+/* - start hero--------- --------------------------- */
+.hero {
+  background-image: url(../brand/hero4.png);
+  width: 100%;
+  height: 114vh;
+  background-size: cover;
+}
+.hero-text {
+  width: 50%;
+  height: 114vh;
+  padding: 0px 80px 0px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ht {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.ht h5 {
+  padding-bottom: 2px;
+  font-size: 17px;
+  color: rgb(147, 144, 137);
+}
+.ht {
+  font-size: 45px;
+  font-family: "Arimo", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Rubik Iso", cursive;
+  color: rgb(147, 144, 137);
+ 
+}
+.ht p {
+  padding: 5px 0 25px 0;
+  font-size: 16px;
+}
+.ht2 {
+  color: rgb(36, 186, 181);
+}
+.ht button {
+  background-image: url(../brand/button.png);
+  width: 45%;
+  height: 8vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: rgb(227, 230, 243);
+  color: rgb(36, 186, 181);
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* - start features --------------------- */
+.features {
+  display: flex;
+  padding: 50px 80px 0px 80px;
+}
+.features-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.features-counter .fc1 {
+  border: 1px solid rgba(170, 159, 159, 0.251);
+  width: 15%;
+  height: 30vh;
+}
+.features-counter .fc1 button {
+  padding: 3px;
+  height: 5vh;
+  width: 60%;
+  margin: 30px 40px 30px 30px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: rgb(243, 183, 219);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.features-counter .fc1 .color2 {
+  background-color: rgb(215, 241, 177);
+}
+.features-counter .fc1 .color3 {
+  background-color: rgb(187, 202, 220);
+}
+.features-counter .fc1 .color4 {
+  background-color: rgb(205, 196, 196);
+}
+.features-counter .fc1 .color5 {
+  background-color: rgb(243, 183, 219);
+}
+.features-counter .fc1 .color6 {
+  background-color: rgb(249, 208, 234);
+}
+/* - START FEATURE-PRODUCTS ---------------------------- */
+.features-products {
+  padding: 50px 80px 0px 80px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.features-products h2 {
+  font-size: 40px;
+  font-weight: 1000;
+}
+.features-products p {
+  font-size: 18px;
+}
+.features-allpro {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.features-allpro .pro1 {
+  width: 30%;
+  max-width: 280px;
+  justify-content: space-between;
+  height: 57vh;
+  border: 1px solid rgb(237, 229, 229);
+  padding: 10px;
+  border-radius: 25px;
+  padding-top: 10px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 15px rgb(210, 196, 196);
+  cursor: pointer;
+}
+.features-allpro .pro1 img {
+  width: 100%;
+  height: 36vh;
+  border: 1px solid rgb(234, 225, 225);
+  border-radius: 25px;
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+.pro1 img:hover {
+  transform: scale(1.09);
+}
+.pro1 .desk {
+  text-align: start;
+  padding: 5px 5px;
+  position: relative;
+}
+.pro1 .desk span {
+  color: dimgrey;
+}
+.pro1 .desk h3 {
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 5px;
+}
+.pro1 .desk .cart {
+  color: rgb(245, 220, 78);
+  padding-top: 5px;
+}
+.pro1 .desk h4 {
+  color: rgb(27, 175, 27);
+  font-weight: 800;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.pro1 .desk .bag {
+  color: rgb(92, 237, 92);
+  width: 35px;
+  height: 35px;
+  background-color: rgb(230, 223, 223);
+  border-radius: 50px;
+  padding: 7px 7px;
+  font-size: 20px;
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+}
+/* - start banner --------------------------------- */
+.banner {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../images/banner/b2.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+.banner h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 0;
+}
+.banner h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  padding: 10px 0;
+}
+.banner h2 span {
+  color: red;
+}
+.banner button {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 30px;
+  color: black;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ease;
+  margin-top: 20px;
+}
+.banner button:hover {
+  color: #fff;
+  background-color: rgba(43, 208, 241, 0.426);
+}
+/* startparint banner-------------------- */
+.parint-banner {
+  padding: 50px 80px 0px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.parint-banner .banner-box {
+  background-image: url(../images/banner/b17.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 580px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.parint-banner .banner-box2 {
+  background-image: url(../images/banner/b10.jpg);
+}
+.banner-box h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.banner-box h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  padding-left: 20px;
+}
+.banner-box span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.banner-box button {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid rgb(147, 129, 129);
+  outline: none;
+  transition: 0.2s ease;
+  margin-left: 20px;
+}
+.banner-box:hover button {
+  background-color: rgb(147, 129, 129);
+  color: #fff;
+  border: none;
+}
+/* start banner2 ----------------------------- */
+.banner-3box {
+  padding: 50px 80px 0px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner-box1 {
+  background-image: url(../images/banner/b7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 32%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.banner-box2 {
+  background-image: url(../images/banner/b4.jpg);
+}
+.banner-box3 {
+  background-image: url(../images/banner/b18.jpg);
+}
+.banner-box1 h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+.banner-box1 h3 {
+  color: red;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+/* - banner-latter ------------------------------- */
+.banner-latter {
+  padding: 50px 80px 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(../images/banner/b14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20px 30px;
+  width: 100%;
+  height: 26vh;
+  background-color: rgb(18, 36, 47);
+  margin: 10px 0;
+}
+.banner-latter .text h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+.banner-latter .text p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #9a9292;
+  padding: 10px 0;
+}
+.banner-latter .text p span {
+  color: #b0d346;
+}
+.banner-latter .form {
+  display: flex;
+  width: 30%;
+}
+.banner-latter .form input {
+  height: 45px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  border: 1px solid transparent;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.banner-latter .form button {
+  font-size: 16px;
+  font-weight: 400;
+  width: 130px;
+  color: white;
+  background-color: #07580b46;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s ease;
+}
+/* - footer start--------------------------- */
+footer .main {
+  padding: 50px 80px 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main1 h4 {
+  padding: 20px 0px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.main .main1 .social-icon {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.main a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(90, 85, 85);
+}
+.main a:hover {
+  text-decoration: underline;
+  color: rgb(76, 142, 248);
+}
+.main .social-img {
+  border: 1px solid rgb(206, 198, 198);
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.main .social-img:hover {
+  cursor: pointer;
+}
+.main .v-img {
+  padding-top: 25px;
+}
+.main1 .app {
+  margin-top: 73px;
+}
+footer .p-text {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #9a9292;
+}
+#nav_btn,
+.nav_btn {
+  display: none;
+}
+/* responsive------------------------------------------ 1024px----------------------------------- */
+@media screen and (max-width: 1024px) {
+  .features {
+    padding: 50px 0px 0px 0px;
+  }
+  .features-counter {
+    width: 100%;
+    padding: 0 80px;
+  }
+  .features-counter .fc1 img {
+    width: 100%;
+  }
+  .features-counter .fc1 button {
+    padding: 0px;
+    font-size: 11px;
+    font-weight: 400px;
+  }
+  .features-allpro .pro1 img {
+    height: 34vh;
+  }
+  .features-products h2 {
+    font-size: 38px;
+  }
+  .parint-banner .banner-box {
+    min-width: 415px;
+  }
+  .banner-box h2 {
+    font-size: 27px;
+  }
+  .banner-box1 h2 {
+    font-size: 22px;
+  }
+  .main .social-img {
+    width: 49%;
+  }
+  .main1 .app {
+    margin-top: 52px;
+  }
+  .main .main1 {
+    width: 25%;
+  }
+}
+/* responsive------------------------------------------ 768px------ */
+header {
+  padding: 0 0px 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 13;
+    flex-direction: column;
+    background: rgb(166, 174, 209);
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    padding: 26px;
+    transition: left 0.5s ease-in-out;
+  }
+  #nav_btn:checked + ul {
+    left: 0%;
+  }
+  #nav_btn {
+    display: none;
+  }
+  .nav_btn {
+    display: inline-block;
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    z-index: 11;
+    cursor: pointer;
+    font-size: 27px;
+  }
+  .nav_btn.close {
+    z-index: 14;
+    position: absolute;
+    color: aliceblue;
+  }
+  .navbar ul li {
+    margin-top: 50px;
+    font-size: large;
+    font-weight: 800;
+  }
+  .navbar ul {
+    width: 100%;
+  }
+  .navbar ul li a {
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar ul li a.active::after,
+  .navbar ul li a:hover::after {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 330px;
+  }
+  .hero {
+    height: 79vh;
+  }
+  .hero-text {
+    width: 80%;
+    height: 75vh;
+    padding: 0px 0px 0px 20px;
+  }
+  .ht h2 {
+    font-size: 35px;
+  }
+  .ht button {
+    width: 30%;
+    height: 7vh;
+    font-size: 13px;
+  }
+  .features-counter {
+    width: 100%;
+    height: 25vh;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    height: 90vh;
+  }
+  .features-counter .fc1 {
+    height: 40vh;
+    width: 30%;
+  }
+  .features-counter .fc1 button {
+    padding: 0px;
+    margin: 15px 0px 0px 44px;
+    font-size: 10px;
+  }
+  .features-products h2 {
+    font-size: 30px;
+  }
+  .features-products p {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .features-products {
+    padding: 40px 50px;
+  }
+  .features-allpro .pro1 {
+    height: 61vh;
+    padding-top: 6px;
+    width: 50%;
+  }
+  .banner h2 {
+    font-size: 25px;
+  }
+  .banner button {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 21px;
+  }
+  .parint-banner {
+    padding: 50px 20px 0px 20px;
+  }
+  .parint-banner .banner-box {
+    min-width: 340px;
+    height: 40vh;
+  }
+  .banner-box button {
+    padding: 7px 14px;
+  }
+  .banner-3box {
+    padding: 50px 20px 0px 20px;
+  }
+  .banner-box1 h2 {
+    font-size: 18px;
+  }
+  .banner-box1 {
+    height: 22vh;
+  }
+  .banner-latter {
+    padding: 50px 20px 50px 20px;
+  }
+  .banner-latter .text h4 {
+    font-size: 19px;
+  }
+  .banner-latter .text p {
+    font-size: 14px;
+  }
+  .banner-latter .form input {
+    height: 35px;
+  }
+  .banner-latter .form button {
+    font-size: 14px;
+  }
+  footer .main {
+    padding: 50px 20px 50px 50px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .main .main1 {
+    width: 50%;
+  }
+  .main .social-img {
+    width: 40%;
+  }
+  .main1 .app {
+    margin-top: 77px;
+  }
+  .main .v-img {
+    width: 80%;
+  }
+}
+/* responsive------------------------------------------ 425px------ */
+@media screen and (max-width: 425px) {
+  header {
+    padding: 0 0px 0 10px;
+  }
+  .navbar ul li a.active::after,
+  .navbar ul li a:hover::after {
+    content: "";
+    width: 10%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 130px;
+  }
+  .hero {
+    height: 39vh;
+  }
+  .hero-text {
+    width: 80%;
+    height: 48vh;
+    padding: 0px 0px 0px 10px;
+  }
+  .ht h2 {
+    font-size: 18px;
+  }
+  .ht h5 {
+    font-size: 14px;
+  }
+  .ht p {
+    font-size: 12px;
+  }
+  .ht button {
+    width: 38%;
+    height: 4vh;
+    font-size: 10px;
+  }
+  .features {
+    padding: 15px 0px 0px 0px;
+    width: 100%;
+    height: 100vh;
+  }
+  .features-counter .fc1 {
+    height: 30vh;
+    width: 47%;
+  }
+  .features-counter .fc1 button {
+    margin: 0px 2px 7px 35px;
+  }
+  .features-counter {
+    width: 100%;
+    height: 100vh;
+  }
+  .features-products h2 {
+    font-size: 22px;
+  }
+  .features-products p {
+    font-size: 13px;
+    padding-top: 10px;
+  }
+  .features-allpro .pro1 {
+    width: 100%;
+  }
+  .banner h2 {
+    font-size: 16px;
+  }
+  .banner h4 {
+    font-size: 14px;
+  }
+  .banner button {
+    font-size: 11px;
+    font-weight: 300;
+    padding: 7px 13px;
+  }
+  .parint-banner {
+    grid-gap: 20px;
+  }
+  .parint-banner .banner-box {
+    min-width: 383px;
+    height: 40vh;
+  }
+  .banner-box h2 {
+    font-size: 23px;
+  }
+  .banner-box span {
+    font-size: 12px;
+  }
+  .banner-box button {
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+  .banner-box1 {
+    height: 30vh;
+    min-width: 100%;
+  }
+  .banner-box1 h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .banner-latter {
+    height: 24vh;
+  }
+  .banner-latter .text p {
+    font-size: 9px;
+  }
+  .banner-latter .form input {
+    height: 30px;
+    padding: 0;
+    font-size: 11px;
+  }
+  .banner-latter .form button {
+    font-size: 11px;
+    width: 70px;
+  }
+  .main .main1 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main1 .app {
+    margin-top: 0px;
+  }
+}
+/* responsive------------------------------------------ 375px------ */
+@media screen and (max-width: 375px) {
+  header {
+    padding: 0 0px 0 10px;
+  }
+  .navbar ul li a.active::after,
+  .navbar ul li a:hover::after {
+    content: "";
+    width: 10%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 130px;
+  }
+  .hero {
+    height: 39vh;
+  }
+  .hero-text {
+    width: 80%;
+    height: 48vh;
+    padding: 0px 0px 0px 10px;
+  }
+  .ht h2 {
+    font-size: 18px;
+  }
+  .ht h5 {
+    font-size: 14px;
+  }
+  .ht p {
+    font-size: 12px;
+  }
+  .ht button {
+    width: 38%;
+    height: 4vh;
+    font-size: 10px;
+  }
+  .features {
+    padding: 15px 0px 0px 0px;
+    width: 100%;
+    height: 100vh;
+  }
+  .features-counter .fc1 {
+    height: 30vh;
+    width: 47%;
+  }
+  .features-counter .fc1 button {
+    margin: 20px 20px 20px 34px;
+  }
+  .features-counter {
+    width: 100%;
+    height: 100vh;
+  }
+  .features-products h2 {
+    font-size: 22px;
+  }
+  .features-products p {
+    font-size: 13px;
+    padding-top: 10px;
+  }
+  .features-allpro .pro1 {
+    width: 100%;
+  }
+  .banner h2 {
+    font-size: 16px;
+  }
+  .banner h4 {
+    font-size: 14px;
+  }
+  .banner button {
+    font-size: 11px;
+    font-weight: 300;
+    padding: 7px 13px;
+  }
+  .parint-banner {
+    grid-gap: 20px;
+  }
+  .parint-banner .banner-box {
+    min-width: 332px;
+    height: 31vh;
+  }
+  .banner-box h2 {
+    font-size: 23px;
+  }
+  .banner-box span {
+    font-size: 12px;
+  }
+  .banner-box button {
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+  .banner-box1 {
+    height: 30vh;
+    min-width: 100%;
+  }
+  .banner-box1 h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .banner-latter {
+    height: 24vh;
+  }
+  .banner-latter .text p {
+    font-size: 9px;
+  }
+  .banner-latter .form input {
+    height: 30px;
+    padding: 0;
+    font-size: 11px;
+  }
+  .banner-latter .form button {
+    font-size: 11px;
+    width: 70px;
+  }
+  .main .main1 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main1 .app {
+    margin-top: 0px;
+  }
+}
+/* responsive------------------------------------------ 360px------ */
+@media screen and (max-width: 360px) {
+  header {
+    height: 6vh;
+  }
+  .hero {
+    height: 30vh;
+}
+.hero-text {
+  width: 97%;
+  height: 38vh;
+}
+.hero {
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+
+
+
+}
+/* responsive------------------------------------------ 320px---------------------------- */
+@media screen and (max-width: 320px) {
+  .parint-banner .banner-box {
+    min-width: 279px;
+    height: 30vh;
+  }
+  .banner button {
+    font-size: 9px;
+  }
+  .banner-latter .form {
+    width: 69%;
+    margin-left: 22px;
+  }
+  .banner-latter .form input {
+    height: 20px;
+  }
+}
+/* Small screens, such as mobile devices */
+@media only screen and (max-width: 767px) {
+  /* CSS styles for small screens */
+}
+/* Medium screens, such as tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles for medium screens */
+}
+/* Large screens, such as laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* CSS styles for large screens */
+}
+/* Extra large screens, such as desktops */
+@media only screen and (min-width: 1200px) {
+  /* CSS styles for extra large screens */
+}

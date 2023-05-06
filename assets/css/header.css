@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    /* background-color: aqua; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* overflow: hidden; */
+}
+/* -----start header--------- */
+header{
+    padding: 0 80px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(227,230,243);
+    position:sticky;
+    left: 0;
+    top: 0;
+    box-shadow: 10px 10px 30px rgb(164, 169, 194) ; 
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.navbar ul{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+}
+.navbar ul li{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: relative;
+}
+.navbar ul li a{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color: rgb(36, 186, 181);
+}
+.navbar ul li a.active::after,
+.navbar ul li a:hover::after{
+    content: "";
+    width: 70%;
+    height: 3px;
+   position: absolute;
+   background-color:rgb(36, 186, 181) ;
+   bottom: 15px;
+   left: 0px;
+}
+/* - start hero--------- --------------------------- */
+.hero{
+    background-image: url(../images/banner/b1.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+}
+.hero-text{
+    width: 100%;
+    height: 50vh;
+    padding: 0px 80px 0px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.ht{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.ht h2{
+    font-size: 45px;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+}
+.ht p{
+    padding: 5px 0 25px 0;
+    font-size: 16px;
+}/* - START FEATURE-PRODUCTS ---------------------------- */
+.features-products{
+    padding: 50px 80px 0px 80px;
+    text-align: center;
+    width: 100%;
+    height:auto;
+  }      
+.features-allpro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .features-allpro .pro1{
+    width: 30%;
+    max-width: 280px;
+    justify-content: space-between;
+    height: 57vh;
+    border: 1PX solid rgb(237, 229, 229);
+    padding: 10px;
+    border-radius: 25px;
+    padding-top: 10px;
+    margin-top: 20px;
+   box-shadow: 5PX 5PX 15PX rgb(210, 196, 196);
+   cursor:pointer;
+  }
+  .features-allpro .pro1 img{
+    width: 100%;
+    height: 36vh;
+    border: 1PX solid rgb(234, 225, 225);
+    border-radius: 25px;
+    transition: 0.4s ease;
+    overflow: hidden;
+  }
+  .pro1 img:hover{
+    transform: scale(1.09);
+  }
+  .pro1 .desk{
+    text-align: start;
+    padding: 5px 5px;
+    position: relative;
+  }
+  .pro1 .desk span{
+    color: dimgrey;
+  }
+  .pro1 .desk h3{
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 5px;
+  }
+  .pro1 .desk .cart{
+    color: rgb(245, 220, 78);
+    padding-top: 5px;
+  }
+  .pro1 .desk h4{
+    color: rgb(27, 175, 27);
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .pro1 .desk .bag{
+    color: rgb(92, 237, 92);
+    width: 35px;
+    height: 35px;
+    background-color: rgb(230, 223, 223);
+    border-radius: 50px;
+    padding: 7px 7px;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+  }
+  /*-- start paginashion----------- -- */
+.paginashion{
+    text-align: center;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginashion-iteam a{
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #0f5f0b;
+}
+  /* - banner-latter ------------------------------- */
+.banner-latter{
+    padding: 50px 80px 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    background-image: url(../images/banner/b14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20px 30px;
+    width: 100%;
+    height: 26vh;
+    background-color: rgb(18, 36, 47);
+    margin: 10px 0;
+}
+.banner-latter .text h4{
+ font-size: 22px;
+ font-weight: 700;
+ color: #fff;
+}
+.banner-latter .text p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #9a9292;
+    padding: 10px 0;
+   }
+   .banner-latter .text p span{
+    color: #b0d346;
+   }
+   .banner-latter .form{
+    display: flex;
+    width: 30%;
+   }
+   .banner-latter .form input{
+    height: 45px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    border: 1px solid transparent;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+   }
+   .banner-latter .form button{
+    font-size: 16px;
+    font-weight: 400;
+    width: 130px;
+    color: white;
+    background-color: #07580b46;
+     border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s ease;
+   }
+    /* - footer start--------------------------- */
+    footer .main{
+        padding: 50px 80px 50px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .main .main1 h4{
+        padding: 20px 0px;
+        font-size: 20px;
+        font-weight: 800;
+       }
+       .main .main1 .social-icon{
+        width: 35%;
+        display: flex;
+        justify-content:space-between;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+       }
+       .main a{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: 17px ;
+        font-weight: 500;
+        color: rgb(90, 85, 85);
+       }
+       .main a:hover{
+        text-decoration:underline;
+        color: rgb(76, 142, 248);
+       }
+       .main .social-img{
+        border: 1px solid rgb(206, 198, 198);
+        margin: 10px 0;
+        border-radius: 5px;
+       }
+       .main .social-img:hover{
+        cursor: pointer;
+       }
+       .main .v-img{
+        padding-top: 25px;
+       }
+       .main1 .app{
+        margin-top: 73px;
+       }
+       footer .p-text{
+        text-align: center;
+        padding-bottom: 30px;
+        color: #9a9292;
+       }
+       #nav_btn , .nav_btn{
+        display: none;
+     }
+     /* products page css ***************************************/
+     .products{
+        padding: 50px 80px 50px 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+     }
+     .products-img{
+      width: 47%;
+     }
+     .products-img .main-img img{
+        width: 100%;
+     }
+     .products-img .small-img{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+     }
+     .products-img .small-img img{
+        width: 100%;
+     }
+     .products-img .small-img .col{
+        flex-basis: 24%;
+        cursor: pointer;
+     }
+     .products-text{
+        width: 50%;
+        padding: 35px 20px;
+     }
+     .products-text h6{
+       font-size: 16px;
+        padding-bottom: 20px ;
+     }
+     .products-text h4{
+        font-size: 20px;
+         padding-bottom: 20px ;
+      }
+      .products-text h2{
+        font-size: 40px;
+         padding-bottom: 30px ;
+      }
+      .products-text select{
+        font-size: 14px;
+        font-weight: 700;
+         padding: 10px ;
+         outline: none;
+      }
+      .products-text input{
+         padding: 10px ;
+         outline: none;
+         width: 20%;
+      }
+      .products-text button{
+        padding: 10px ;
+        outline: none;
+        width: 24%;
+        border: none;
+        background-color: #0f5f0b;
+        color: #fff;
+        cursor: pointer;
+        height: 6vh;
+     }
+     .products-text h3{
+        padding-top: 50px ;
+        padding-bottom: 30px;
+        font-size: 25px;
+        font-weight: 900;
+     }
+     .products-text p{
+        padding-top: 20px;
+        font-size: 17px;
+     }
+     .banner-latter{
+        margin-top: 70px;
+        height: 35vh;
+     }
+     /* blog-section**************************************** */
+   #blog-section .hero{
+    background-image: url(../images/banner/b19.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+}
+/* -------------------------------------------start respovise------------------------------ */  
+                                 /* Extra large screens, such as desktops */
+@media only screen and (min-width: 1200px) {
+  /* CSS styles for extra large screens */
+  .features-allpro .pro1 {
+    height: 62vh;
+}
+.navbar ul li a.active::after, .navbar ul li a:hover::after {
+  width: 65%;
+  left: 1px;
+}
+}
+                                      /* Large screens, such as laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* CSS styles for large screens */
+  .features-allpro .pro1 {
+    height: 60vh;
+}
+.ht h2 {
+  font-size: 40px;
+}
+footer .main {
+  flex-wrap: wrap;
+}
+}
+                                        /* Medium screens, such as tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles for medium screens */
+  header {
+    padding: 0px 18px 0 0px;
+}
+.navbar ul li {
+  padding: 0px 20px;
+}
+.navbar {
+    width: 70%;
+}
+.navbar ul li a.active::after, .navbar ul li a:hover::after {
+  width: 37%;
+  left: 19px;
+}
+  .hero {
+    height: 42vh;
+}
+  .ht h2 {
+    font-size: 38px;
+  }
+  .features-allpro .pro1 {
+    height: 63vh;
+    width: 33%;
+}
+.paginashion-iteam a {
+  font-size: 18px;
+}
+footer .main {
+  flex-wrap: wrap;
+}
+}
+                                    /* Small screens, such as mobile devices */
+ @media only screen and (min-width:320px) and (max-width: 767px) {
+  /* CSS styles for small screens */
+  header {
+    padding: 0px 18px 0 0px;
+}
+  .navbar ul{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 13;
+    flex-direction: column;
+    background:rgb(166, 174, 209);
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    padding: 26px;
+    transition: left .5s  ease-in-out;
+ }
+#nav_btn:checked + ul {
+    left: 0%;
+}
+#nav_btn{
+    display: none;
+}
+.nav_btn{
+    display: inline-block;
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    z-index: 11;
+    cursor: pointer;
+    font-size: 27px;
+}
+.nav_btn.close{
+    z-index: 14;
+    position: absolute;
+    color: aliceblue;
+}
+.navbar ul li{  
+    margin-top: 50px;
+    font-size: large;
+    font-weight: 800;
+}
+.navbar ul{ 
+     width:100%;
+}
+.navbar ul li a{
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.navbar ul li a.active::after,
+.navbar ul li a:hover::after{
+    content: "";
+    width: 15%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 110px;
+}
+.hero {
+  height: 39vh;
+}
+.features-allpro {
+  flex-wrap: wrap;
+}
+.features-allpro .pro1 {
+  width: 45%;
+}
+.banner-latter .form {
+  width: 65%;
+  height: 7vh;
+}
+.banner-latter .form input {
+  height: 7vh;
+}
+footer .main {
+  flex-wrap: wrap;
+}
+.hero {
+  height: 30vh;
+}
+.hero-text {
+  height: 30vh;
+}
+.ht h2 {
+  font-size: 22px;
+}
+.ht p {
+  padding: 2px 0 25px 0;
+  font-size: 9px;
+}
+.features-allpro{
+  justify-content: center;
+}
+.features-allpro .pro1 {
+  width: 100%;
+  height: 61vh;
+}
+.features-products {
+  padding: 25px 35px 0px 35px;
+}
+.paginashion-iteam a {
+  font-size: 12px;
+}
+.paginashion {
+  height: 23vh;
+}
+.banner-latter {
+  margin-top: 10px;
+  height: 35vh;
+  padding: 12px 35px 0px 35px;
+}
+footer .main {
+  padding: 35px 40px 0px 35px;
+}
+.main .main1 h4 {
+  padding: 15px 0px;
+}
+.main1 .app {
+  margin-top: 0px;
+}
+.main .social-img {
+  margin: 7px 0;
+  width: 48%;
+}
+.main .v-img {
+  padding: 12px 50px 12px 50px;
+  width: 100%;
+}
+.products{
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+    align-content: space-around;
+    padding: 50px 0px 0px 0px;
+}
+.products-text {
+  width: 100%;
+  text-align: center;
+
+}
+.products-img {
+  width: 100%;
+}
+ }
+
+
+
